@@ -1,0 +1,19 @@
+https://stackoverflow.com/questions/55761103/api-share-count-facebook-graph-deprecated
+
+If you have app in facebook, its very simple without login, you can get it.
+
+https://graph.facebook.com/?id={URL}&fields=engagement&access_token={your-app_id}|{your-app_secret}
+Response will be like :
+
+{
+  "engagement": {
+    "reaction_count": 36,
+    "comment_count": 2,
+    "share_count": 20,
+    "comment_plugin_count": 3
+  },
+  "id": "https://www.example.com"
+}
+Ref : 
+1. https://developers.facebook.com/docs/facebook-login/access-tokens
+2. https://rudrastyh.com/facebook/get-share-count-for-url.html
